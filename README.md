@@ -1,4 +1,9 @@
 Modelo de Prosperidad Sostenible (MPS)
+
+**🌍 Ver la aplicación online:** https://colegatron.github.io/MODELO-PROSPERIDAD-SOSTENIBLE/
+
+_(La web se genera y publica sola con GitHub Actions en cada cambio; no requiere ningún servidor.)_
+
 El Modelo de Prosperidad Sostenible (MPS) es una herramienta de análisis macroeconómico diseñada para desglosar la realidad económica de las naciones más allá de las métricas convencionales. A través de un enfoque basado en la "coste-labor", el modelo identifica la eficiencia real de las instituciones y el impacto del aparato estatal en el desarrollo humano.
 
 Nuestra Metodología:
