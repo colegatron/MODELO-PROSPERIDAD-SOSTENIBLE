@@ -29,13 +29,12 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Preparar el sitio estático
+        # Publica el contenido de la raíz tal cual (lo que deje el repo de
+        # trabajo vía el pipeline). Robusto: no hay que mantener una lista de
+        # ficheros; se publica lo que haya, salvo metadatos.
         run: |
-          mkdir -p dist/BaseDeDatos
-          cp index.html dist/index.html
-          cp MPS.py dist/MPS.py
-          cp BaseDeDatos/Pizarra_MPS_Master.json dist/BaseDeDatos/Pizarra_MPS_Master.json
-          cp BaseDeDatos/pib_ppa_2008_2023.json dist/BaseDeDatos/pib_ppa_2008_2023.json
-          cp -r assets dist/assets
+          mkdir -p dist
+          rsync -a --exclude='.git' --exclude='.github' --exclude='dist' ./ dist/
 
       - name: Configurar Pages
         uses: actions/configure-pages@v5
